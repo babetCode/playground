@@ -16,6 +16,29 @@
                 deck.push(rank + suit);
             }
         }
+
+        function makeFaceDownCard() {
+            // Create the face-down card div
+            const cardDiv = document.createElement('div');
+            cardDiv.style.color = 'white';
+            cardDiv.style.fontWeight = 'bold';
+            cardDiv.style.fontSize = '14px';
+            cardDiv.style.border = '1px solid #ccc';
+            cardDiv.style.padding = '2px 4px';
+            cardDiv.style.margin = '1px';
+            cardDiv.style.background = 'linear-gradient(45deg, #1e3a8a, #3b82f6)';
+            cardDiv.style.borderRadius = '3px';
+            cardDiv.style.display = 'inline-flex';
+            cardDiv.style.width = '50px';
+            cardDiv.style.height = '50px';
+            cardDiv.style.alignItems = 'center';
+            cardDiv.style.justifyContent = 'center';
+            cardDiv.style.boxSizing = 'border-box';
+            cardDiv.textContent = '⚜';
+            
+            // Add to body
+            document.body.appendChild(cardDiv);
+        }
         
         console.log(deck);
     </script>
